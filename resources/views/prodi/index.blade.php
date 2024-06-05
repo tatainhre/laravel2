@@ -31,7 +31,7 @@
                 <h3 class="card-title">Data Prodi</h3>
 
                 <div class="card-tools">
-                  <a href="tambahprodi" class="btn btn-primary">Tambah</a>
+                  <a href="/prodi/create" class="btn btn-primary">Tambah</a>
                   </div>
                 </div>
               </div>
@@ -49,7 +49,7 @@
 
                         @foreach ($prodi as $p)
                             <tr>
-                                <td>{{ $p->Id_prodi }}</td>
+                                <td>{{ $loop->iteration }}</td>
                                 <td>{{ $p->nama_prodi }}</td>
                                 <td>
                                     <a href="" class="btn btn-warning">Edit</a>

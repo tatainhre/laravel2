@@ -9,9 +9,11 @@ Route::get('/', function () {
 });
 
 Route::get('/', function () {
-    $data = ['nama' => "herlita", 'foto' =>'me.jpg'];
+    $data = ['nama' => "herlita", 'foto' =>'herlita.jpg'];
     return view('dashboard' , compact('data'));
 });
 Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
 
 Route::get('/prodi', [ProdiController::class, 'index']);
+Route::get('/prodi/create', [ProdiController::class, 'create']);
+Route::post('/prodi', [ProdiController::class, 'store']);

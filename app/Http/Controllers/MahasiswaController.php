@@ -9,8 +9,8 @@ class MahasiswaController extends Controller
 {
     public function index()
     {
-        $data = ['nama' => "herlita", 'foto' => 'me.jpg'];
-        $mahasiswa = DB::table('mahasiswaa')->get();
+        $data = ['nama' => "herlita", 'foto' => 'herlita.jpg'];
+        $mahasiswa = DB::table('mahasiswa')->get();
         return view('mahasiswa', compact(['data', 'mahasiswa']));
     }
     public function show($id)
