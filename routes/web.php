@@ -20,3 +20,4 @@ Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
 // Route::post('/prodi', [ProdiController::class, 'store']);
 
 Route::resource('/prodi', ProdiController::class);
+Route::resource('/mahasiswa', MahasiswaController::class);
